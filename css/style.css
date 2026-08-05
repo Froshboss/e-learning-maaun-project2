@@ -165,6 +165,22 @@
     border: 2px solid #fb873f;
 }
 
+.navbar-title {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+/* Responsive fix for the long university name in the navbar */
+@media (max-width: 576px) {
+    .navbar-brand .navbar-title {
+        white-space: normal; /* Allow text to wrap */
+        font-size: 16px;     /* Reduce font size on small screens */
+    }
+    .navbar-brand {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
